@@ -2,12 +2,12 @@
 #push google or coreos images to dockerhub or aliyun registry,
 #change the registry name and username/password to yourself's.
 
-ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/opstrend
+ALI_REGISTRY=registry.cn-beijing.aliyuncs.com/opstrend
 ALI_USERNAME=2008chen.jun@gmail.com
 ALI_PASSWORD=871002/*-cj
 
 #config the following env at travis-ui
-docker login registry.cn-hangzhou.aliyuncs.com -u $ALI_USERNAME  -p $ALI_PASSWORD
+docker login $ALI_REGISTRY -u $ALI_USERNAME  -p $ALI_PASSWORD
 
 for image in $(cat img-list.txt)
 do
