@@ -3,8 +3,6 @@
 #change the registry name and username/password to yourself's.
 
 ALI_REGISTRY=registry.cn-beijing.aliyuncs.com/opstrend
-ALI_USERNAME=2008chen.jun@gmail.com
-ALI_PASSWORD=871002/*-cj
 
 #config the following env at travis-ui
 docker login $ALI_REGISTRY -u $ALI_USERNAME  -p $ALI_PASSWORD
