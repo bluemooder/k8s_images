@@ -6,9 +6,11 @@
 #Version:V1.0
 #Description:maven配置
 
+set -e
+
 #预定义变量
 export WOKR_DIR=/usr/local/src
-export MAVEN_VERSION=3.6.1
+export MAVEN_VERSION=${1:-"3.6.1"}
 
 #下载maven
 cd $WOKR_DIR

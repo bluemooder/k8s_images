@@ -6,6 +6,8 @@
 #Version:V1.0
 #Description:rabbitmq安装脚本
 
+set -e
+
 #设置自定义变量
 MQ_VERSION=3.7.16
 WORK_DIR=/usr/local/src
@@ -42,7 +44,7 @@ rabbitmq-plugins enable rabbitmq_management
 chown -R rabbitmq:rabbitmq /var/lib/rabbitmq/
 
 #创建管理用户及设置权限
-rabbitmqctl add_user admin hz@rabbitmq
+rabbitmqctl add_user admin 123456
 rabbitmqctl set_user_tags admin administrator
 rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
 

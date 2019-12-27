@@ -7,6 +7,8 @@
 #Version:V1.0
 #Description:redis初始安装
 
+set -e
+
 #预定义变量
 export WORK_DIR=/usr/local/src
 export REDIS_VERSION=5.0.2

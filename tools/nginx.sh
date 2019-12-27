@@ -6,9 +6,11 @@
 #Version:V1.0
 #Description:Nginx 编译安装脚本
 
+set -e
+
 #预定义变量
 export WORK_DIR=/usr/local/src
-export NGINX_VERSION=1.16.1
+export NGINX_VERSION=${1:-"1.16.1"}
 export NGINX_DIR=/usr/local/nginx
 
 #安装编译nginx依赖

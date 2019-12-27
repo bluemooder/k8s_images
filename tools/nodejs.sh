@@ -6,6 +6,8 @@
 #Version:V1.0
 #Description:nodejs配置.
 
+set -e
+
 #预定义变量
 export WOKR_DIR=/usr/local/src
 export NODEJS_VERSION=v12.8.0

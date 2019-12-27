@@ -6,6 +6,8 @@
 #Version:V1.0
 #Description:Yum安装mysql
 
+set -e
+
 #预定义变量
 MYSQL_VERSION=5.7.24
 

@@ -6,9 +6,11 @@
 #Version:V1.0
 #Description:This is a production script.
 
+set -e
+
 #预定义变量
 export WOKR_DIR=/usr/local/src
-export CONSUL_VERSION=1.5.3
+export CONSUL_VERSION=${1:-"1.5.3"}
 export CONSUL_DIR=/opt/consul
 
 #创建consul服务目录

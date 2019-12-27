@@ -6,6 +6,8 @@
 #Version:V1.0
 #Description:jdk安装脚本
 
+set -e
+
 #预定义变量
 export WOKR_DIR=/usr/local/src
 #使用华为的镜像源下载jdk安装包，速度快，而且可以自定义安装版本，免去登陆和授权确认等操作

@@ -6,6 +6,8 @@
 #Version:V1.0
 #Description:git安装脚本
 
+set -e
+
 #预定义变量
 export WORK_DIR=/usr/local/src
 export GIT_VERSION=2.9.5
